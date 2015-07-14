@@ -6,7 +6,9 @@ namespace p20
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
+			for(var k = 0; k <= 10; k++){
+				Console.WriteLine (k + "：かねだ");
+			}
 		}
 	}
 }
