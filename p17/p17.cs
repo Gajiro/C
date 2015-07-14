@@ -8,18 +8,29 @@ namespace p17
 		{
 			while (true) {
 				Console.WriteLine ("点数を入力");
-				int score = int.Parse (Console.ReadLine ());
-				var msg = "D判定";
-				if(score >= 60) {
-					msg = ("C判定");
-				}
-				if (score >= 70) {
-					msg = ("B判定");
-				}
-				if (score >= 80) {
-					msg = ("A判定");
-				}
-				Console.WriteLine (msg);
+				var input = (Console.ReadLine ());
+                int score;
+                if (int.TryParse(input, out score))
+                {
+                    var msg = "D判定";
+                    if (score >= 60)
+                    {
+                        msg = ("C判定");
+                    }
+                    if (score >= 70)
+                    {
+                        msg = ("B判定");
+                    }
+                    if (score >= 80)
+                    {
+                        msg = ("A判定");
+                    }
+                    Console.WriteLine(msg);
+                }else{
+                    Console.WriteLine("整数を入力してください");
+                    
+                }
+
 				
 			}
 		}

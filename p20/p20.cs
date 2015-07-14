@@ -6,8 +6,10 @@ namespace p20
 	{
 		public static void Main (string[] args)
 		{
-			for(var k = 0; k <= 10; k++){
-				Console.WriteLine (k + "：かねだ");
+            var KANEDA = ("かねだ");
+            for (var k = 0; k <= 10; k++){
+				Console.WriteLine (k + "：" + KANEDA);
+                KANEDA += "あ";
 			}
 		}
 	}
