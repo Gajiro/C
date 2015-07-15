@@ -24,7 +24,7 @@ namespace p2_5
                 var msg = "";
                 switch (scores[name])
                 {
-                    case 80:
+                   case 80:
                         msg = "優";
                         break;
                     default:
