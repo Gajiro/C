@@ -28,7 +28,7 @@ namespace p16
                     Console.WriteLine(msg);
                 }
                 else {
-                    Console.WriteLine("整数を入力してください");
+                    Console.WriteLine("正の整数を入力してください");
                 }
 
 			}
