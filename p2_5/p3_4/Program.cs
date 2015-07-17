@@ -53,6 +53,7 @@ namespace Book
                 + "/" + p2.birthday.Month
                 + "/" + p2.birthday.Day + "生 " + p2.getAge() + "才");
 
+            var p3 = new Person("");
         }
     }
 
@@ -86,44 +87,4 @@ namespace Book
         }
     }
 
-    class Person
-    {
-        public string lastName;
-        public string firstName;
-        public string furiganaLastName;
-        public string furiganaFirstName;
-        public DateTime birthday;
-        private int height;
-        private int weight;
-
-        public Person(string lastName,string firstName,string furiganaLastName, string furiganaFirstName,DateTime birthday,int height,int weight){
-                    this.lastName = lastName;
-                    this.firstName = firstName;
-                    this.furiganaLastName = furiganaLastName;
-                    this.furiganaFirstName = furiganaFirstName;
-                    this.birthday = birthday;
-                    this.height = height;
-                    this.weight = weight;
-    }
-        /*
-        public int Height {
-            set { return height; };
-            get { }
-        }
-
-        public int Weight
-        {
-            set { }
-            get { }
-        }
-        */
-        public int getAge()
-        {
-            int age = 0;
-            DateTime now = DateTime.Now;
-            TimeSpan ts = now - birthday;
-            age = (int)((double)ts.Days / 365.2425);
-            return age;
-        }
-    }
-}
+   }
